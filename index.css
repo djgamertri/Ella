@@ -105,26 +105,26 @@ html{
         background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
         background-size: cover;
         background-position: center;
-        height: 250vh;
-        width: 140vh;
+        height: 100vh;
+        width: 100vh;
     }
     #t1{
         background-size: cover;
         background-position: center;
-        height: 250vh;
-        width: 140vh;
+        height: 100vh;
+        width: 100vh;
     }
     #t2{
         background-size: cover;
         background-position: center;
-        height: 250vh;
-        width: 140vh;
+        height: 100vh;
+        width: 100vh;
     }
     #t3{
         background-size: cover;
         background-position: center;
-        height: 187vh;
-        width: 140vh;
+        height: 100vh;
+        width: 100vh;
     }
     .banner-text{
         padding-top: 630px;
@@ -169,41 +169,14 @@ html{
         color: #000;
     }
     .t1-text{
-        font-size: 25px;
-        padding-top: 350px;
+        font-size: 23px;
+        padding-top: 150px;
     }
     .t2-text{
-        font-size: 25px;
-        padding-top: 360px;
+        font-size: 23px;
+        padding-top: 160px;
     }
     .t3-text{
         font-size: 25px;
-    }
-}
-@media screen and (max-width: 411px){
-    #banner{
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-        background-size: cover;
-        background-position: center;
-        height: 250vh;
-        width: 140vh;
-    }
-    #t1{
-        background-size: cover;
-        background-position: center;
-        height: 250vh;
-        width: 140vh;
-    }
-    #t2{
-        background-size: cover;
-        background-position: center;
-        height: 250vh;
-        width: 140vh;
-    }
-    #t3{
-        background-size: cover;
-        background-position: center;
-        height: 187vh;
-        width: 140vh;
     }
 }
