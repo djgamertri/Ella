@@ -176,6 +176,9 @@ html{
     .banner-text{
         padding-top: 150px;
     }
+    .banner-text h1{
+        font-size: 110px;
+    }
     .t1-text{
         width: auto;
         padding-top: 60px;
