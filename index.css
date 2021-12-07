@@ -105,29 +105,29 @@ html{
         background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 140vh;
         width: 100vh;
     }
     #t1{
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 140vh;
         width: 100vh;
     }
     #t2{
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 140vh;
         width: 100vh;
     }
     #t3{
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 140vh;
         width: 100vh;
     }
     .banner-text{
-        padding-top: 630px;
+        padding-top: 30px;
         font-size: 25px;
     }
     .banner-text h1{
@@ -169,11 +169,11 @@ html{
         color: #000;
     }
     .t1-text{
-        font-size: 23px;
+        font-size: 20px;
         padding-top: 150px;
     }
     .t2-text{
-        font-size: 23px;
+        font-size: 20px;
         padding-top: 160px;
     }
     .t3-text{
