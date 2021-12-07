@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: arial;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 html{
     scroll-behavior: smooth;
 }
 #banner{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     height: 100vh;
 }
 .banner-text{
@@ -61,11 +61,7 @@ html{
 }
 #t1{
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     height: 100vh;
-
 }
 .t1-text{
     width: 700px;
@@ -77,9 +73,6 @@ html{
 }
 #t2{
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     height: 100vh;
 }
 .t2-text{
@@ -91,9 +84,6 @@ html{
 }
 #t3{
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     height: 100vh;
 }
 .t3-text{
@@ -104,83 +94,61 @@ html{
     font-family: arial;
 }
 
-@media screen and (max-width: 770px){
-    #banner{
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-        background-size: cover;
-        background-position: center;
-        height: 178vh;
-        width: 100vh;
-    }
-    #t1{
-        background-size: cover;
-        background-position: center;
-        height: 178vh;
-        width: 100vh;
-    }
-    #t2{
-        background-size: cover;
-        background-position: center;
-        height: 178vh;
-        width: 100vh;
-    }
-    #t3{
-        background-size: cover;
-        background-position: center;
-        height: 178vh;
-        width: 100vh;
-    }
+@media screen and (max-width: 1000px){
     .banner-text{
-        padding-top: 400px;
-        font-size: 25px;
-    }
-    .banner-text h1{
-        font-size: 200px;
-        font-family: arial;
-    }
-    .banner-text p{
-        font-size: 40px;
-        font-style: italic;
-    }
-    .banner-btn a{
-        width: 150px;
-        text-decoration: none;
-        display: inline-block;
-        margin: 0 10px; 
-        padding: 12px 0;
-        color: black;
-        border: .5px solid black;
-        border-radius: 12px;
-        position: relative;
-        z-index: 1;
-        transition: color 0.5s;
-    }
-    .banner-btn a span{
-        width: 0%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #fff;
-        border-radius: 12px;
-        z-index: -1;
-        transition: 0.5s;
-    }
-    .banner-btn a:hover span{
-        width: 100%;
-    }
-    .banner-btn a:hover{
-        color: #000;
+        padding-top: 200px;
     }
     .t1-text{
-        font-size: 20px;
-        padding-top: 150px;
+        padding-top: 100px;
+        font-size: 14px;
     }
     .t2-text{
-        font-size: 20px;
-        padding-top: 160px;
+        padding-top: 100px;
+        font-size: 14px;
     }
     .t3-text{
-        font-size: 25px;
+        padding-top: 100px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .banner-text{
+        padding-top: 200px;
+    }
+    .t1-text{
+        width: auto;
+        padding-top: 100px;
+        font-size: 13px;
+    }
+    .t2-text{
+        width: auto;
+        padding-top: 100px;
+        font-size: 13px;
+    }
+    .t3-text{
+        width: auto;
+        padding-top: 100px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 400px){
+    .banner-text{
+        padding-top: 150px;
+    }
+    .t1-text{
+        width: auto;
+        padding-top: 60px;
+        font-size: 13px;
+    }
+    .t2-text{
+        width: auto;
+        padding-top: 60px;
+        font-size: 13px;
+    }
+    .t3-text{
+        width: auto;
+        padding-top: 60px;
+        font-size: 13px;
     }
 }
