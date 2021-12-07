@@ -179,29 +179,6 @@ html{
     .t1-text{
         width: auto;
         padding-top: 60px;
-        font-size: 11px;
-    }
-    .t2-text{
-        width: auto;
-        padding-top: 60px;
-        font-size: 11px;
-    }
-    .t3-text{
-        width: auto;
-        padding-top: 60px;
-        font-size: 11px;
-    }
-}
-@media screen and (max-width: 296px){
-    .banner-text{
-        padding-top: 150px;
-    }
-    .banner-text h1{
-        font-size: 100px;
-    }
-    .t1-text{
-        width: auto;
-        padding-top: 60px;
         font-size: 10px;
     }
     .t2-text{
