@@ -31,3 +31,11 @@ observador.observe(sec0);
 observador.observe(sec1);
 observador.observe(sec2);
 observador.observe(sec3);
+
+//Loader
+
+window.onload = function(){
+    var content = document.getElementById("c_loader");
+    content.style.visibility = "hidden";
+    content.style.opacity = "0";
+}
