@@ -46,7 +46,7 @@ h1{
 .content{
     padding-bottom: 20px;
     opacity: 0; 
-    transition: 1s ease-in-out all;
+    transition: .7s ease-in-out all;
 }
 .content.visible{
     opacity: 1;
