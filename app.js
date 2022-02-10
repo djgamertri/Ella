@@ -1,6 +1,6 @@
 //observer
 
-const secincio = document.getElementById("sec-incio");
+const secincio = document.getElementById("secincio");
 const sec1 = document.getElementById("sec1");
 const sec2 = document.getElementById("sec2");
 const sec3 = document.getElementById("sec3");
