@@ -37,7 +37,6 @@ observador.observe(sec3);
 observador.observe(sec4);
 observador.observe(sec5);
 observador.observe(sec6);
-console.log("All");
 
 //Loader
 
