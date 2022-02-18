@@ -52,7 +52,7 @@ h2 {
 @media screen and (max-width: 1000px){
 	.slider-frame {
 		width: 500px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
@@ -63,7 +63,7 @@ h2 {
 @media screen and (max-width: 740px){
 	.slider-frame {
 		width: 370px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
@@ -75,7 +75,7 @@ h2 {
 @media screen and (max-width: 400px){
 	.slider-frame {
 		width: 200px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
@@ -86,7 +86,7 @@ h2 {
 @media screen and (max-width: 469px){
 	.slider-frame {
 		width: 234.5px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
@@ -97,7 +97,7 @@ h2 {
 @media screen and (max-width: 363px){
 	.slider-frame {
 		width: 181.5px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
@@ -108,7 +108,7 @@ h2 {
 @media screen and (max-width: 244px){
 	.slider-frame {
 		width: 144px;
-		height: 600px;
+		height: 100%;
 	}
 	.slider-frame img {
 		width: 100%;
