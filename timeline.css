@@ -232,3 +232,8 @@ h1{
         right: inherit;
     }
 }
+@media (max-width: 500px) {
+    #menuBtn{
+        top: 50px;
+    }
+}
