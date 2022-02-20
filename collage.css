@@ -43,7 +43,6 @@ nav ul li a{
     margin-top: 15px;
 }
 
-
 /*loader*/
 
 #c_loader{
@@ -79,7 +78,6 @@ nav ul li a{
     }
 }
 
-
 /*collage*/
 
 .polaroid {
@@ -93,8 +91,14 @@ nav ul li a{
     box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
 }
 
-/*responsive*/
+.img1{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
 
+/*responsive*/
 
 @media screen and (max-width: 1000px){
     .img1{
