@@ -225,10 +225,6 @@ html{
     }
 }
 @media screen and (max-width: 244px){
-    #banner{
-        height: 100vh;
-        width: 100%;
-    }
     .banner-text{
         padding-top: 150px;
     }
