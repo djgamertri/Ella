@@ -154,7 +154,7 @@ html{
 @media screen and (max-width: 1000px){
     #banner{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
     }
     .banner-text{
         padding-top: 200px;
@@ -169,6 +169,10 @@ html{
 }
 
 @media screen and (max-width: 740px){
+    #banner{
+        height: 100vh;
+        width: 100vw;
+    }
     .banner-text{
         padding-top: 200px;
     }
@@ -179,15 +183,11 @@ html{
         width: 60%;
         font-size: 16px;
     }
-    #banner{
-        width: 100%;
-        height: 100vh; 
-    }
 }
 @media screen and (max-width: 469px){
     #banner{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
     }
     .banner-text{
         padding-top: 190px;
@@ -203,7 +203,7 @@ html{
 @media screen and (max-width: 400px){
     #banner{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
     }
     .banner-text{
         padding-top: 190px;
@@ -212,7 +212,7 @@ html{
 @media screen and (max-width: 363px){
     #banner{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
     }
     .banner-text{
         padding-top: 190px;
@@ -225,6 +225,10 @@ html{
     }
 }
 @media screen and (max-width: 244px){
+    #banner{
+        height: 100vh;
+        width: 100vw;
+    }
     .banner-text{
         padding-top: 150px;
     }
