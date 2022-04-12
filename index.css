@@ -98,7 +98,7 @@ html{
 .banner-text{
     text-align: center;
     color: #000;
-    padding-top: 350px;
+    padding-top: 250px;
     opacity: 0;
     transition: .7s ease-in-out all;
 }
