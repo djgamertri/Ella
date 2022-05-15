@@ -28,6 +28,7 @@ const sec5 = document.getElementById("sec5");
 const sec6 = document.getElementById("sec6");
 const sec7 = document.getElementById("sec7");
 const sec8 = document.getElementById("sec8");
+const sec9 = document.getElementById("sec9");
 
 const LoadImage = (entradas, observador) => { 
 
@@ -60,6 +61,7 @@ observador.observe(sec5);
 observador.observe(sec6);
 observador.observe(sec7);
 observador.observe(sec8);
+observador.observe(sec9);
 
 //Loader
 
