@@ -4,6 +4,11 @@ var menuBtn = document.getElementById("menuBtn")
 var sideNav = document.getElementById("sideNav")
 var menu = document.getElementById("menu")
 
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
+
 sideNav.style.right = "-250px"
 
 menuBtn.onclick = function(){
