@@ -4,6 +4,9 @@
     margin: 0;
     font-family: 'Poppins',Arial;
 }
+body{
+    background: #e7c6ff;
+}
 
 /*menu de navegacion*/
 
@@ -84,6 +87,7 @@ nav ul li a{
 h1{
     text-align: center;
     font-size: 5em;
+    position: sticky;
 }
 
 .polaroid {
@@ -95,55 +99,24 @@ h1{
     padding:10px 10px 90px 10px;
     border:1px solid #BFBFBF;
     box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
-
-.img1{
-    text-align: center;
+#particles-js{
+    height: 100vh;
     width: 100%;
-    height: auto;
-    margin: auto;
+    position: fixed;
+    z-index: 2;
 }
-
+.img1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    fill: #3a86ff;
+}
 /*responsive*/
-
-@media screen and (max-width: 1000px){
-    .img1{
-        text-align: center;
-        width: 50%;
-        height: auto;
-        margin: auto;
-    }
-    .polaroid {
-        height: 350px;
-    }
-}
-/*@media screen and (max-width: 740px){
-}*/
-@media screen and (max-width: 469px){
-    .img1{
-        text-align: center;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    .polaroid {
-        height: 200px;
-    }
-    
-}
-
-@media screen and (max-width: 400px){
-    h1{
-        padding-top: 15%;
-    }
-    .img1{
-        text-align: center;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-}
-/*@media screen and (max-width: 363px){
-}
-@media screen and (max-width: 244px){
-}*/
