@@ -1,5 +1,4 @@
-<div class="snow-container fixed top-0 left-0 w-full h-full z-50 overflow-hidden pointer-events-none">
-</div>
+<div class='snow-container fixed top-0 left-0 w-full h-full z-50 overflow-hidden pointer-events-none'></div>
 
 <style>
   .snow-container {
@@ -19,22 +18,24 @@
 </style>
 
 <script>
-  function createSnowflake() {
-    const snow = document.createElement('div');
-    snow.innerHTML = '❄️';
-    snow.style.position = 'fixed';
-    snow.style.fontSize = Math.random() * (15 - 8) + 8 + 'px';
-    snow.style.left = Math.random() * 100 + 'vw';
-    snow.style.top = '-20px';
-    snow.style.animation = `snowfall ${Math.random() * (10 - 5) + 5}s linear infinite`;
-    snow.style.opacity = '0.8';
+  document.addEventListener('astro:page-load', () => {
+    function createSnowflake() {
+      const snow = document.createElement('div')
+      snow.innerHTML = '❄️'
+      snow.style.position = 'fixed'
+      snow.style.fontSize = Math.random() * (15 - 8) + 8 + 'px'
+      snow.style.left = Math.random() * 100 + 'vw'
+      snow.style.top = '-20px'
+      snow.style.animation = `snowfall ${Math.random() * (10 - 5) + 5}s linear infinite`
+      snow.style.opacity = '0.8'
 
-    document.querySelector('.snow-container')?.appendChild(snow);
+      document.querySelector('.snow-container')?.appendChild(snow)
 
-    setTimeout(() => {
-      snow.remove();
-    }, 10000);
-  }
+      setTimeout(() => {
+        snow.remove()
+      }, 10000)
+    }
 
-  setInterval(createSnowflake, 200);
+    setInterval(createSnowflake, 200)
+  })
 </script>

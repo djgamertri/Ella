@@ -1,4 +1,4 @@
-<div class='hearts-container fixed top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none'></div>
+<div class='hearts-container fixed top-0 left-0 w-full h-full z-10 overflow-hidden pointer-events-none'></div>
 
 <style>
   .hearts-container {
@@ -18,22 +18,24 @@
 </style>
 
 <script>
-  function createHeart() {
-    const heart = document.createElement('div')
-    heart.innerHTML = '❤️'
-    heart.style.position = 'fixed'
-    heart.style.fontSize = Math.random() * (20 - 10) + 10 + 'px'
-    heart.style.left = Math.random() * 100 + 'vw'
-    heart.style.bottom = '-20px'
-    heart.style.animation = `float ${Math.random() * (8 - 4) + 4}s linear`
-    heart.style.opacity = '0.6'
+  document.addEventListener('astro:page-load', () => {
+    function createHeart() {
+      const heart = document.createElement('div')
+      heart.innerHTML = '❤️'
+      heart.style.position = 'fixed'
+      heart.style.fontSize = Math.random() * (20 - 10) + 10 + 'px'
+      heart.style.left = Math.random() * 100 + 'vw'
+      heart.style.bottom = '-20px'
+      heart.style.animation = `float ${Math.random() * (8 - 4) + 4}s linear`
+      heart.style.opacity = '0.6'
 
-    document.querySelector('.hearts-container')?.appendChild(heart)
+      document.querySelector('.hearts-container')?.appendChild(heart)
 
-    heart.addEventListener('animationend', () => {
-      heart.remove()
-    })
-  }
+      heart.addEventListener('animationend', () => {
+        heart.remove()
+      })
+    }
 
-  setInterval(createHeart, 300)
+    setInterval(createHeart, 300)
+  })
 </script>

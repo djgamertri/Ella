@@ -6,16 +6,16 @@ const currentPath = Astro.url.pathname
 
 <nav class='fixed bottom-0 z-50 left-0 w-full bg-white border-t border-gray-200 py-3 px-6'>
   <div class='flex justify-around items-center max-w-lg mx-auto'>
-    <a href='/Ella/gallery' class={`flex flex-col items-center gap-1 ${currentPath === '/gallery' ? 'text-blue-500' : 'text-gray-600'}`}>
-      <Image className={`w-6 h-6 ${currentPath === '/gallery' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
+    <a href='/Ella/gallery' class={`flex flex-col items-center gap-1 ${currentPath === '/Ella/gallery' ? 'text-blue-500' : 'text-gray-600'}`}>
+      <Image class={`w-6 h-6 ${currentPath === '/Ella/gallery' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
       <span class='text-xs'>Gallery</span>
     </a>
-    <a href='/Ella/' class={`flex flex-col items-center gap-1 ${currentPath === '/' ? 'text-blue-500' : 'text-gray-600'}`}>
-      <Home className={`w-6 h-6 ${currentPath === '/' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
+    <a href='/Ella/' class={`flex flex-col items-center gap-1 ${currentPath === '/Ella/' ? 'text-blue-500' : 'text-gray-600'}`}>
+      <Home class={`w-6 h-6 ${currentPath === '/Ella/' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
       <span class='text-xs'>Home</span>
     </a>
-    <a href='/Ella/timeline' class={`flex flex-col items-center gap-1 ${currentPath === '/timeline' ? 'text-blue-500' : 'text-gray-600'}`}>
-      <Clock className={`w-6 h-6 ${currentPath === '/timeline' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
+    <a href='/Ella/timeline' class={`flex flex-col items-center gap-1 ${currentPath === '/Ella/timeline' ? 'text-blue-500' : 'text-gray-600'}`}>
+      <Clock class={`w-6 h-6 ${currentPath === '/Ella/timeline' ? 'stroke-blue-500' : 'stroke-gray-600'}`} />
       <span class='text-xs'>Timeline</span>
     </a>
   </div>
