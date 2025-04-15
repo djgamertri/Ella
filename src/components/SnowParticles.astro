@@ -1,0 +1,40 @@
+<div class="snow-container fixed top-0 left-0 w-full h-full z-50 overflow-hidden pointer-events-none">
+</div>
+
+<style>
+  .snow-container {
+    background: transparent;
+  }
+
+  @keyframes snowfall {
+    0% {
+      transform: translateY(-10px) translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(100px) rotate(360deg);
+      opacity: 0.3;
+    }
+  }
+</style>
+
+<script>
+  function createSnowflake() {
+    const snow = document.createElement('div');
+    snow.innerHTML = '❄️';
+    snow.style.position = 'fixed';
+    snow.style.fontSize = Math.random() * (15 - 8) + 8 + 'px';
+    snow.style.left = Math.random() * 100 + 'vw';
+    snow.style.top = '-20px';
+    snow.style.animation = `snowfall ${Math.random() * (10 - 5) + 5}s linear infinite`;
+    snow.style.opacity = '0.8';
+
+    document.querySelector('.snow-container')?.appendChild(snow);
+
+    setTimeout(() => {
+      snow.remove();
+    }, 10000);
+  }
+
+  setInterval(createSnowflake, 200);
+</script>

@@ -1,0 +1,22 @@
+---
+import '@/styles/globals.css'
+import BottomBar from '@/components/BottomBar.astro'
+import { ClientRouter } from 'astro:transitions'
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='shortcut icon' href='/favicon.png' type='image/x-icon' />
+    <title>✨Mas que un simple infinito✨</title>
+    <ClientRouter />
+  </head>
+  <body>
+    <main class='pb-20 bg-pink-50'>
+      <slot />
+    </main>
+    <BottomBar />
+  </body>
+</html>
