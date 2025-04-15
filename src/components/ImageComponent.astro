@@ -1,0 +1,60 @@
+---
+interface Props {
+  s3Url: string;
+  Name?: string;
+  id: string;
+}
+
+const { s3Url, Name = 'Image', id } = Astro.props;
+const isVideo = s3Url.endsWith('.mp4') || s3Url.endsWith('.webm');
+---
+
+<div
+  class='group relative rounded-md shadow-sm hover:shadow-lg'
+>
+  {!isVideo ? (
+    <img src={s3Url} alt={Name} class='w-full max-w-full cursor-pointer rounded-md' loading='lazy' />
+  ) : (
+    <div class='relative cursor-pointer overflow-hidden rounded-md'>
+      <video
+        class='h-auto w-full rounded-md object-cover'
+        muted
+        loop
+        playsinline
+        preload='metadata'
+        id={id}
+      >
+        <source src={s3Url} />
+      </video>
+    </div>
+  )}
+</div>
+
+<script>
+  interface VideoElement extends HTMLVideoElement {
+    play(): Promise<void>;
+    pause(): void;
+    currentTime: number;
+  }
+
+  const handleVideo = (videoId: string) => {
+    const video = document.getElementById(videoId) as VideoElement | null;
+    const container = video?.parentElement?.parentElement;
+
+    if (!video || !container) return;
+
+    container.addEventListener('mouseenter', () => {
+      video.play().catch((e: Error) => console.log('Video play error:', e));
+    });
+
+    container.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  };
+
+  // Initialize the video handler
+  const currentScript = document.currentScript;
+  const videoId = currentScript?.parentElement?.querySelector('video')?.id;
+  if (videoId) handleVideo(videoId);
+</script>

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+  <section class='flex flex-col items-center justify-center py-16'>
+    <h1 class='text-3xl font-bold text-pink-600 mb-4'>¿Razones para amarte?</h1>
+    <p class='text-lg text-gray-700 mb-6 text-center max-w-2xl px-4'>Cada día descubro nuevas razones para amarte más, eres mi inspiración y mi felicidad</p>
+    <span class='text-gray-700 mb-4'>(En este pdf podras encontrar las razones)</span>
+    <a href='/Razones.pdf' download>
+      <span class='bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors cursor-pointer font-bold shadow-lg'>DESCARGA PDF</span>
+    </a>
+  </section>
+  <section class='flex justify-center items-center w-full max-w-screen h-[600px] relative overflow-x-hidden'>
+    <div class='flex flex-col items-center px-2 relative z-10'>
+      <div class='z-10'>
+        <h1 class='text-4xl font-semibold uppercase text-white text-center'>Te Amo</h1>
+        <h1 class='text-xl flex items-center gap-2 text-white'>
+          <span>✨</span>
+          <span class='text-center'>mas que un simple infinito</span>
+          <span>✨</span>
+        </h1>
+      </div>
+      <div class='heart absolute -z-10'></div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .heart {
+    width: 300px;
+    height: 300px;
+    background-color: #ff4b4b;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -50px;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: #ff4b4b;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .heart::before {
+    left: -150px;
+  }
+
+  .heart::after {
+    top: -150px;
+  }
+</style>

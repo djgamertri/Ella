@@ -1,0 +1,67 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import ImageComponent from '../components/ImageComponent.astro'
+import { images } from '../data/images'
+import SnowParticles from '@/components/SnowParticles.astro'
+---
+
+<Layout>
+  <SnowParticles />
+  <h1 class='text-center text-4xl py-8 font-bold'>Nuestros momentos</h1>
+  <div class='mx-auto max-w-[90%] pb-8'>
+    <div class='w-full columns-2 gap-6 lg:columns-[350px]'>
+      {
+        images.map((url, index) => (
+          <div class='mb-6 gallery-item'>
+            <ImageComponent s3Url={url} Name={`Image ${index + 1}`} id={`video-player-${index}`} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .gallery-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+  }
+
+  .gallery-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: bounce 0.8s ease;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(50px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const observerOptions = {
+    threshold: 0.2
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate')
+        observer.unobserve(entry.target)
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('.gallery-item').forEach((item) => {
+    observer.observe(item)
+  })
+</script>
